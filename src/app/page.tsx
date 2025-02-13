@@ -45,13 +45,13 @@ export default function Home() {
     return (
         <main className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <header className="bg-gradient-to-r from-primary to-blue-700 text-white">
+            <header className="bg-gradient-to-r from-primary via-primary-dark to-secondary text-white">
                 <div className="container mx-auto px-6 py-12">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div className="flex justify-center md:justify-start w-full md:w-auto">
                             <div className="w-48 h-48 relative">
                                 <Image
-                                    src="/images/TechSonix.png"
+                                    src="/images/TechSonix.Icon.png"
                                     alt="TechSonix Logo"
                                     fill
                                     priority
@@ -62,7 +62,7 @@ export default function Home() {
                         <div className="md:ml-8 md:flex-1 text-center md:text-left">
                             <h1 className="text-5xl font-bold mb-4">TechSonix</h1>
                             <p className="text-xl mb-8">Innovative Blockchain & Web Development Solutions</p>
-                            <a href="#contact" className="inline-block bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            <a href="#contact" className="inline-block bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-primary-dark transition-colors">
                                 Get in Touch
                             </a>
                         </div>
@@ -142,7 +142,7 @@ export default function Home() {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50"
+                                className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors disabled:opacity-50"
                             >
                                 {isSubmitting ? 'Sending...' : 'Send Message'}
                             </button>
