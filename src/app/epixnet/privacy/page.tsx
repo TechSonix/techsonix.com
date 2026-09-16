@@ -233,11 +233,13 @@ const sections: PolicySection[] = [
           records that law requires us to retain.
         </p>
         <p>
-          We use HTTPS for this website and form delivery and restrict the use
-          of support information to the purposes described here. Local wallet
-          encryption and device protections help protect stored data, but no
-          device, service, or transmission can be guaranteed completely secure.
-          Public and replicated content should not be treated as confidential.
+          HTTPS is available at https://techsonix.com, and forms submit to
+          Web3Forms over HTTPS. Use the HTTPS address when visiting this site.
+          We restrict the use of support information to the purposes described
+          here. Local wallet encryption and device protections help protect
+          stored data, but no device, service, or transmission can be guaranteed
+          completely secure. Public and replicated content should not be treated
+          as confidential.
         </p>
       </>
     ),

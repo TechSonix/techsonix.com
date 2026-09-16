@@ -91,9 +91,10 @@ const sections: PolicySection[] = [
           claims. We limit retained information to those purposes.
         </p>
         <p>
-          We use HTTPS for this website and form delivery. We restrict use of
-          correspondence to the purposes described here. No service or
-          transmission can be guaranteed completely secure.
+          HTTPS is available at https://techsonix.com, and forms submit to
+          Web3Forms over HTTPS. Use the HTTPS address when visiting this site.
+          We restrict use of correspondence to the purposes described here. No
+          service or transmission can be guaranteed completely secure.
         </p>
         <p>
           Hosting, form, and email providers may process information in other

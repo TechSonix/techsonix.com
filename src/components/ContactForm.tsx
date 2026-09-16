@@ -105,7 +105,8 @@ export default function ContactForm({
       <div aria-live="polite" aria-atomic="true">
         {status === "success" && (
           <p className="form-status success">
-            Your message was sent. We’ll reply to the email you provided.
+            Your submission was accepted for delivery. If a response is needed,
+            we’ll use the email you provided.
           </p>
         )}
         {status === "error" && (

@@ -47,7 +47,8 @@ without the owner's direction.
 
 1. Review the source and local production preview, including all legal pages.
 2. Confirm contact routing and operational facts above, then merge/publish the
-   source and deploy the static export with `npm run deploy`.
+   source and deploy the static export with `npm run deploy`. Enable GitHub Pages
+   HTTPS enforcement; the existing HTTP site currently does not redirect to HTTPS.
 3. Verify every public HTTPS policy/support route and perform an authorized
    benign support receipt test. Mocked form tests do not establish inbox delivery.
 4. Configure the wallet build with `EPIX_TERMS_URL=https://techsonix.com/epixnet/terms/`
@@ -61,6 +62,8 @@ those separate release gates in the EpixNet submission package.
 
 ## References checked
 
+- [Claims audit](claims-audit.md): source-backed corrections and remaining live
+  marketing, release-artifact, and operational verification gates.
 - [Wallet policy comparison](wallet-policy-comparison.md): Keplr, Phantom and
   MetaMask terms and privacy notices reviewed on 16 September 2026. The draft
   uses original language reflecting EpixNet's implementation and retains the
