@@ -25,6 +25,20 @@ Phantom sources cover the wallet; its merchandise-store policies are separate.
 
 ## Application to EpixNet
 
+The browser comparison is supported by the providers' own documentation:
+[Keplr Mobile's in-app browser](https://help.keplr.app/mobile-app/5R3bMyjtr3iKzMhqyCqu56/explore-dapps-with-keplr-mobile%E2%80%99s-browser/5So5gM41LhZn5CZxJZKmLv)
+and [MetaMask Mobile's browser](https://support.metamask.io/configure/wallet/how-to-use-the-metamask-mobile-browser/)
+both provide access to dApps. Keplr's third-party provisions and MetaMask
+section 1.3 distinguish independently operated destinations from the wallet
+provider, apply the destination's own terms, and disclaim endorsement and
+third-party risks. EpixNet's terms now expressly apply that distinction to
+sites displayed in its browser or connected to its wallet.
+
+Apply the distinction according to who actually operates each service. Do not
+copy a blanket claim that TechSonix never curates content or controls a service:
+the dashboard, listings and any TechSonix-operated services need accurate scope.
+EpixNet's peer replication and publishing also need their existing disclosures.
+
 - Keep the explicit non-custodial model, user control of keys and approvals,
   inability to recover missing secrets or reverse confirmed transactions, and
   loss provisions for user actions, scams, third parties and network conditions.

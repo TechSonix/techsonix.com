@@ -168,9 +168,18 @@ const sections: PolicySection[] = [
   },
   {
     id: "content",
-    title: "Content and independent services",
+    title: "Browsing, content, and independent services",
     content: (
       <>
+        <p>
+          EpixNet’s built-in browser lets you visit websites, xites, and
+          decentralized applications (dApps). A destination operated
+          independently of TechSonix remains a third-party service when
+          displayed inside EpixNet or connected to its wallet. Its operator’s
+          terms, privacy practices, and fees apply to your dealings with it.
+          Access through EpixNet does not make TechSonix that operator or a
+          party to your agreement with it.
+        </p>
         <p>
           You retain your rights in content you create, subject to rights held
           by others and any licenses you choose. Publishing to a decentralized
