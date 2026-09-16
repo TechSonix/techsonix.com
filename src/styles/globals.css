@@ -1251,3 +1251,33 @@ p {
     text-decoration: underline;
   }
 }
+
+.product-nav {
+  border-bottom: 1px solid var(--line);
+  background: var(--soft);
+}
+.product-nav .wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding-block: 16px;
+  font-size: 12px;
+}
+.product-nav-title {
+  font-weight: 700;
+  margin-right: auto;
+}
+.product-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 760px) {
+  .product-nav .wrap {
+    gap: 12px 18px;
+    font-size: 11px;
+  }
+  .product-nav-title {
+    flex-basis: 100%;
+  }
+}

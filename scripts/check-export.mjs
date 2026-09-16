@@ -45,19 +45,48 @@ for (const [file, html] of htmlByPath) {
     }
   }
 }
+const appRoutes = [
+  "epixnet",
+  "epixnet/privacy",
+  "epixnet/terms",
+  "epixnet/support",
+  "epixnet/community",
+  "epixnet/delete-data",
+];
 for (const route of [
   "privacy",
   "terms",
   "support",
-  "community",
   "delete-data",
-  "epixnet",
+  ...appRoutes,
 ]) {
   const html = htmlByPath.get(path.join(root, route, "index.html")) || "";
   if (!html.includes(`href="https://techsonix.com/${route}/"`))
     failures.push(`${route}: missing canonical`);
   if (!html.includes("TechSonix")) failures.push(`${route}: missing publisher`);
+  if (
+    appRoutes.includes(route) &&
+    !/<meta name="robots" content="[^"]*noindex/.test(html)
+  )
+    failures.push(`${route}: missing noindex`);
 }
+// Check all company pages, including metadata and embedded hydration data.
+// App information must only be reachable by entering an app URL directly.
+for (const [file, html] of htmlByPath) {
+  if (path.relative(root, file).startsWith("epixnet/")) continue;
+  if (/epixnet|epixzone|\bxID\b/i.test(html))
+    failures.push(
+      `${path.relative(root, file)}: exposes the app from a company page`,
+    );
+}
+const sitemap = await readFile(path.join(root, "sitemap.xml"), "utf8");
+if (/epixnet/i.test(sitemap))
+  failures.push("App routes must not be in the company sitemap");
+// Crawlers must be able to read noindex; do not block the app in robots.txt.
+const robots = await readFile(path.join(root, "robots.txt"), "utf8");
+if (/^Disallow:\s*(?:\/|\/epixnet\/?)\s*$/m.test(robots))
+  failures.push("robots.txt prevents reading app noindex");
+
 if (
   (await readFile(path.join(root, "CNAME"), "utf8")).trim() !== "techsonix.com"
 )
@@ -69,5 +98,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `PASS: ${htmlFiles.length} exported pages; internal links, fragments, policy URLs, landmarks, CNAME and .nojekyll verified.`,
+  `PASS: ${htmlFiles.length} exported pages; internal links, fragments, policy URLs, landmarks, unlisted app routes, noindex, CNAME and .nojekyll verified.`,
 );

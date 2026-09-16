@@ -1,10 +1,10 @@
 import PolicyLayout, {
   type PolicySection,
-} from "../../components/PolicyLayout";
-import ContactForm from "../../components/ContactForm";
+} from "../../../components/EpixPolicyLayout";
+import ContactForm from "../../../components/ContactForm";
 export const metadata = {
   title: "Community rules & content reports",
-  alternates: { canonical: "/community/" },
+  alternates: { canonical: "/epixnet/community/" },
 };
 const sections: PolicySection[] = [
   {
@@ -83,9 +83,13 @@ const sections: PolicySection[] = [
           Some in-xite reports are publicly signed and replicated. This website
           form provides a separate private channel to TechSonix through our form
           and email service providers, as explained in the{" "}
-          <a href="/privacy/#contact">privacy policy</a>.
+          <a href="/epixnet/privacy/#contact">privacy policy</a>.
         </p>
-        <ContactForm topic="Content or copyright report" />
+        <ContactForm
+          topic="Content or copyright report"
+          product
+          privacyHref="/epixnet/privacy/#contact"
+        />
       </>
     ),
   },
@@ -105,10 +109,10 @@ const sections: PolicySection[] = [
         <p>
           Where appropriate, we may ask for more information and explain our
           decision. To request a review, use the{" "}
-          <a href="/support/#contact">support form</a>, select “Moderation
-          appeal,” and include the relevant decision or report identifier and
-          your reason. Do not publish private complaint details in a public
-          report.
+          <a href="/epixnet/support/#contact">support form</a>, select
+          “Moderation appeal,” and include the relevant decision or report
+          identifier and your reason. Do not publish private complaint details
+          in a public report.
         </p>
       </>
     ),

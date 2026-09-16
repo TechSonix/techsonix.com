@@ -5,16 +5,22 @@ export default function PolicyLayout({
   title,
   intro,
   sections,
+  backHref = "/about/",
+  backLabel = "TechSonix",
+  supportHref = "/support/",
 }: {
   title: string;
   intro: string;
   sections: PolicySection[];
+  backHref?: string;
+  backLabel?: string;
+  supportHref?: string;
 }) {
   return (
     <>
       <section className="page-hero wrap policy-hero">
-        <a className="back-link" href="/epixnet/">
-          ← EpixNet
+        <a className="back-link" href={backHref}>
+          ← {backLabel}
         </a>
         <p className="eyebrow">TechSonix, Inc. / Legal & support</p>
         <h1>{title}</h1>
@@ -32,7 +38,7 @@ export default function PolicyLayout({
               </a>
             ))}
           </nav>
-          <a className="text-link" href="/support/">
+          <a className="text-link" href={supportHref}>
             Need help? Contact us ↗
           </a>
         </aside>

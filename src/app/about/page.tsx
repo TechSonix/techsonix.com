@@ -14,8 +14,8 @@ export default function About() {
         </h1>
         <p className="lede">
           TechSonix develops web applications, blockchain software, and
-          integrated systems. We also publish EpixNet, an application for
-          exploring peer-hosted xites and connecting to open networks.
+          integrated systems. We connect interface design, application
+          development, and infrastructure to turn ideas into useful products.
         </p>
       </section>
       <section className="wrap detail-grid section-bottom">
@@ -38,9 +38,7 @@ export default function About() {
           <h3>TechSonix, Inc.</h3>
           <p>Software development & application publishing.</p>
           <div className="link-list">
-            <a href="/epixnet/">EpixNet product information ↗</a>
             <a href="/support/">Business inquiries & support ↗</a>
-            <a href="https://github.com/TechSonix">TechSonix on GitHub ↗</a>
             <a href="/privacy/">Privacy & data information ↗</a>
           </div>
         </div>

@@ -5,12 +5,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
     "services/",
-    "epixnet/",
     "about/",
     "support/",
     "privacy/",
     "terms/",
-    "community/",
     "delete-data/",
     ...services.map((s) => `services/${s.slug}/`),
   ].map((path) => ({ url: `https://techsonix.com/${path}` }));

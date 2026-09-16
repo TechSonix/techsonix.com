@@ -29,7 +29,6 @@ export default function SiteHeader() {
         >
           {[
             ["/services/", "What we do"],
-            ["/epixnet/", "EpixNet"],
             ["/about/", "Company"],
             ["/support/", "Support"],
           ].map(([href, label]) => (

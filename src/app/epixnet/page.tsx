@@ -25,7 +25,7 @@ export default function EpixNet() {
             <a href="https://github.com/EpixZone/EpixNet" className="button">
               Explore the project ↗
             </a>
-            <a href="/support/" className="text-link">
+            <a href="/epixnet/support/" className="text-link">
               Get support →
             </a>
           </div>
@@ -84,7 +84,7 @@ export default function EpixNet() {
               operators are responsible for their own content and services. A
               link, search result, or wallet connection is not an endorsement.
             </p>
-            <a href="/terms/" className="text-link">
+            <a href="/epixnet/terms/" className="text-link">
               Read the terms →
             </a>
           </div>
@@ -127,22 +127,22 @@ export default function EpixNet() {
         <div className="resource-grid">
           {[
             [
-              "/privacy/",
+              "/epixnet/privacy/",
               "Privacy policy",
               "Understand data, peers, and third-party services.",
             ],
             [
-              "/terms/",
+              "/epixnet/terms/",
               "Terms of use",
               "Your responsibilities and the scope of our services.",
             ],
             [
-              "/community/",
+              "/epixnet/community/",
               "Community & reporting",
               "Content rules, private reports, and appeals.",
             ],
             [
-              "/delete-data/",
+              "/epixnet/delete-data/",
               "Data deletion",
               "Request removal of data controlled by TechSonix.",
             ],

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | TechSonix",
   },
   description:
-    "TechSonix, Inc. builds blockchain applications, web experiences, and connected systems. Publisher of EpixNet.",
+    "TechSonix, Inc. builds blockchain applications, web experiences, and connected systems.",
   icons: {
     icon: "/images/TechSonix.Icon.png",
     apple: "/images/TechSonix.Icon.png",

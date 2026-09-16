@@ -13,14 +13,11 @@ export default function SiteFooter() {
             <div>
               <span className="eyebrow">Explore</span>
               <a href="/services/">What we do</a>
-              <a href="/epixnet/">EpixNet</a>
               <a href="/about/">Company</a>
-              <a href="https://github.com/TechSonix">GitHub ↗</a>
             </div>
             <div>
               <span className="eyebrow">Help & information</span>
               <a href="/support/">Contact & support</a>
-              <a href="/community/">Community rules & reports</a>
               <a href="/delete-data/">Request data deletion</a>
             </div>
           </div>

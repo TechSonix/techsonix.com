@@ -1,6 +1,6 @@
 # TechSonix website
 
-The TechSonix, Inc. company website and public EpixNet information pages.
+The TechSonix, Inc. company website, with unlisted public product-information pages.
 Next.js exports static HTML to `out/`; GitHub Pages serves the `gh-pages`
 branch at **https://techsonix.com**. Policy content is present in the HTML and
 can be read without JavaScript, a login, a wallet, or payment.
@@ -25,22 +25,41 @@ npm run preview
 Open http://127.0.0.1:3005. The check verifies the actual export's internal
 links/fragments, policy routes, landmarks, CNAME and `.nojekyll`.
 
-## Public routes
+## Company routes
 
-| Page                            | URL                                |
-| ------------------------------- | ---------------------------------- |
-| Company homepage                | https://techsonix.com/             |
-| Services                        | https://techsonix.com/services/    |
-| EpixNet                         | https://techsonix.com/epixnet/     |
-| Company                         | https://techsonix.com/about/       |
-| Privacy policy                  | https://techsonix.com/privacy/     |
-| Terms of use                    | https://techsonix.com/terms/       |
-| Contact/support                 | https://techsonix.com/support/     |
-| Community rules/private reports | https://techsonix.com/community/   |
-| Data/account deletion requests  | https://techsonix.com/delete-data/ |
+Company navigation leads only to company pages. These pages contain no EpixNet
+references, app links, or app metadata.
 
-The URLs above are deployment targets until the redesigned export is published.
-Do not configure store candidates against unverified URLs.
+| Page                  | URL                                |
+| --------------------- | ---------------------------------- |
+| Company homepage      | https://techsonix.com/             |
+| Services              | https://techsonix.com/services/    |
+| Company               | https://techsonix.com/about/       |
+| Contact               | https://techsonix.com/support/     |
+| Website privacy       | https://techsonix.com/privacy/     |
+| Website terms         | https://techsonix.com/terms/       |
+| Contact-data deletion | https://techsonix.com/delete-data/ |
+
+## Direct app URLs
+
+These pages are accessible to everyone with a direct link. They are not linked
+from company pages or listed in the sitemap. All inherit `noindex, nofollow`;
+this is a search-engine directive, not access control. The company GitHub links
+are also omitted from public site navigation. The repository itself remains public.
+
+| Page                               | URL                                        |
+| ---------------------------------- | ------------------------------------------ |
+| EpixNet information                | https://techsonix.com/epixnet/             |
+| App privacy                        | https://techsonix.com/epixnet/privacy/     |
+| App terms                          | https://techsonix.com/epixnet/terms/       |
+| App support                        | https://techsonix.com/epixnet/support/     |
+| Community rules/private reports    | https://techsonix.com/epixnet/community/   |
+| App data/account deletion requests | https://techsonix.com/epixnet/delete-data/ |
+
+Use the direct app URLs in the app and store listings after deployment and live
+verification. Do not block them in robots.txt or require a login: the public
+policy and support pages must remain readable, including their noindex directives.
+All URLs are deployment targets until the redesigned export is published.
 
 ## Contact delivery
 
@@ -70,7 +89,8 @@ Pages “Enforce HTTPS” setting for consistent secure navigation.
 
 ## Policy maintenance
 
-Policy copy lives in `src/app/privacy`, `terms`, `community`, and `delete-data`.
+Company policies live in `src/app/privacy`, `terms`, and `delete-data`.
+App policies and support live under `src/app/epixnet/`.
 Shared publisher information is in `src/lib/site.ts`. Update the policy revision
 date when practices change. The terms distinguish a software publisher from
 independent users/operators and preserve non-waivable legal rights. They do not

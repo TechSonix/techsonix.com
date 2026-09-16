@@ -1,7 +1,7 @@
 import ContactForm from "../../components/ContactForm";
 import { site } from "../../lib/site";
 export const metadata = {
-  title: "Contact & EpixNet support",
+  title: "Contact TechSonix",
   alternates: { canonical: "/support/" },
 };
 export default function Support() {
@@ -13,8 +13,8 @@ export default function Support() {
           Let’s <span className="serif">talk.</span>
         </h1>
         <p className="lede">
-          A project idea, an EpixNet question, or something that needs our
-          attention. Start here.
+          Have a project in mind, a question about our services, or something
+          that needs our attention? Start here.
         </p>
       </section>
       <section className="wrap detail-grid section-bottom" id="contact">
@@ -25,8 +25,8 @@ export default function Support() {
             to TechSonix.
           </h2>
           <p>
-            No account, wallet connection, xID, or payment is needed to contact
-            us.
+            Tell us what you’re working on and where you need help. No account
+            is needed to contact us.
           </p>
           {site.contactEmail && (
             <p>
@@ -36,18 +36,16 @@ export default function Support() {
             </p>
           )}
           <div className="link-list">
-            <a href="/community/#report">
-              Report content or copyright concerns ↗
-            </a>
-            <a href="/delete-data/">Request account or data deletion ↗</a>
-            <a href="/privacy/">Read the privacy policy ↗</a>
+            <a href="/services/">Explore our capabilities ↗</a>
+            <a href="/privacy/">Website privacy policy ↗</a>
+            <a href="/delete-data/">Request deletion of contact data ↗</a>
           </div>
           <div className="small-note">
-            <strong>For app support</strong>
+            <strong>For project inquiries</strong>
             <p>
-              Include your device, operating system, app version, and steps to
-              reproduce the issue. Share only the log excerpts needed to explain
-              it, with personal information removed.
+              Share the problem you want to solve, the work you have in mind,
+              and any relevant timing. Please keep confidential credentials out
+              of your message.
             </p>
           </div>
         </div>

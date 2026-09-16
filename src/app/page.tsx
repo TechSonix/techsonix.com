@@ -22,8 +22,8 @@ export default function Home() {
             <a className="button" href="/services/">
               Explore what we do <span aria-hidden="true">↗</span>
             </a>
-            <a className="text-link" href="/epixnet/">
-              Meet EpixNet <span aria-hidden="true">→</span>
+            <a className="text-link" href="/about/">
+              About TechSonix <span aria-hidden="true">→</span>
             </a>
           </div>
           <p className="hero-footnote">
@@ -78,46 +78,9 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="product-feature">
-        <div className="wrap feature-grid">
-          <div>
-            <p className="eyebrow">02 / Built by us</p>
-            <div className="product-wordmark">
-              EpixNet<span>↗</span>
-            </div>
-            <p className="feature-tagline">
-              A different way
-              <br />
-              to explore the web.
-            </p>
-          </div>
-          <div className="feature-copy">
-            <span className="pill">Browser · Peer network · Wallet</span>
-            <h2>
-              Explore an open,
-              <br />
-              connected network.
-            </h2>
-            <p>
-              EpixNet brings browsing, peer-hosted xites, and wallet connections
-              into one application. TechSonix is the app’s publisher;
-              independent communities create their own destinations.
-            </p>
-            <a className="button button-light" href="/epixnet/">
-              Get to know EpixNet <span aria-hidden="true">↗</span>
-            </a>
-            <a
-              className="subtle-link"
-              href="https://github.com/EpixZone/EpixNet"
-            >
-              Explore the source on GitHub ↗
-            </a>
-          </div>
-        </div>
-      </section>
       <section className="section wrap approach">
         <div>
-          <p className="eyebrow">03 / How we think</p>
+          <p className="eyebrow">02 / How we think</p>
           <h2>
             Useful from the
             <br />

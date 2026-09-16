@@ -4,8 +4,12 @@ import { site } from "../lib/site";
 import { sendContact } from "../lib/contact";
 export default function ContactForm({
   topic = "General inquiry",
+  product = false,
+  privacyHref = "/privacy/#contact",
 }: {
   topic?: string;
+  product?: boolean;
+  privacyHref?: string;
 }) {
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
@@ -61,11 +65,15 @@ export default function ContactForm({
           {[
             "General inquiry",
             "Project inquiry",
-            "EpixNet support",
             "Privacy request",
             "Data deletion request",
-            "Content or copyright report",
-            "Moderation appeal",
+            ...(product
+              ? [
+                  "Product support",
+                  "Content or copyright report",
+                  "Moderation appeal",
+                ]
+              : []),
           ].map((value) => (
             <option key={value}>{value}</option>
           ))}
@@ -78,13 +86,17 @@ export default function ContactForm({
           rows={6}
           required
           maxLength={8000}
-          placeholder="Tell us what you need. For an app issue, include your platform and app version."
+          placeholder={
+            product
+              ? "Tell us what you need. For an app issue, include your platform and app version."
+              : "Tell us about your project, question, or request."
+          }
         />
       </label>
       <p className="form-note">
         Never include recovery phrases, private keys, wallet passwords, or
         illegal material. Messages go to TechSonix through Web3Forms. Read our{" "}
-        <a href="/privacy/#contact">privacy policy</a>.
+        <a href={privacyHref}>privacy policy</a>.
       </p>
       <button type="submit" className="button" disabled={status === "sending"}>
         {status === "sending" ? "Sending…" : "Send message"}{" "}
