@@ -69,6 +69,13 @@ const sections: PolicySection[] = [
     content: (
       <>
         <p>
+          EpixNet’s integrated software wallet is designed for self-custody. You
+          are responsible for protecting your device, passwords, private keys,
+          and recovery information, and for keeping usable backups. Losing or
+          disclosing that information can cause permanent loss of access to
+          assets.
+        </p>
+        <p>
           Check the destination, network, asset, amount, fees, and requested
           permissions before approving a wallet action. Protect and back up
           recovery information. TechSonix support never needs your seed phrase,
@@ -85,6 +92,54 @@ const sections: PolicySection[] = [
         <p>
           Independent services may impose their own fees and terms. A software
           connection does not mean TechSonix is a party to your transaction.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "wallet-losses",
+    title: "Wallet losses and third-party risks",
+    content: (
+      <>
+        <p>
+          To the fullest extent permitted by applicable law, TechSonix is not
+          liable for loss of funds, digital assets, or access resulting from:
+        </p>
+        <ul>
+          <li>
+            Lost, forgotten, deleted, exposed, or stolen recovery information,
+            private keys, passwords, or backups; or compromise of your device.
+          </li>
+          <li>
+            Transfers to an incorrect address or network, incorrect amounts,
+            unsupported assets, or permissions and transactions you authorize.
+          </li>
+          <li>
+            Phishing, impersonation, scams, malicious approvals, or a connected
+            application’s misuse of permissions or assets.
+          </li>
+          <li>
+            Failures, vulnerabilities, outages, or misconduct of independent
+            blockchains, smart contracts, validators, RPC providers, bridges,
+            exchanges, hardware wallets, or other third-party services.
+          </li>
+          <li>
+            Asset-price changes, loss of liquidity, network fees, transaction
+            delays, or changes to an independent network or protocol.
+          </li>
+        </ul>
+        <p>
+          TechSonix does not insure wallet balances, guarantee asset values or
+          transaction outcomes, or promise to replace lost funds merely because
+          you used EpixNet. Any obligation expressly agreed by TechSonix or
+          imposed by applicable law remains in effect.
+        </p>
+        <p>
+          These provisions do not exclude or limit responsibility for
+          TechSonix’s own conduct where that responsibility cannot lawfully be
+          excluded or limited. They are subject to the mandatory-rights
+          exceptions in the <a href="#liability">liability limitations</a>{" "}
+          below.
         </p>
       </>
     ),

@@ -21,6 +21,12 @@ without the owner's direction.
   Terms do not invent a governing state, mandatory arbitration, a hard age gate,
   or a damages cap. Legal review should evaluate the liability provisions for
   the markets in which the app is offered.
+- Review the explicit wallet-loss provisions: recovery information, mistaken
+  transfers, scams/approvals, independent service failures, and market/network
+  risks. They do not promise reimbursement or insurance, but preserve duties
+  imposed by law and express agreements. This is not a determination that
+  TechSonix is free of liability for every loss, including losses involving its
+  own software or conduct.
 
 ## Publication sequence
 
@@ -45,6 +51,7 @@ those separate release gates in the EpixNet submission package.
 - [Google UGC](https://support.google.com/googleplay/android-developer/answer/9876937?hl=en): applicable moderation duties remain with the app publisher.
 - [GitHub privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 - [Web3Forms privacy](https://web3forms.com/privacy): form delivery and processing.
+- [UK government guidance on statutory consumer rights](https://www.gov.uk/unfair-terms-in-sales-contracts/implied-rights): an example of limits on contractual exclusions. This is not a choice of UK law or a finding that it applies to TechSonix; assess each intended release market.
 
 Policies allocate responsibility without claiming blanket legal immunity. Scope
 and enforceability depend on facts and applicable law; publication alone is not
