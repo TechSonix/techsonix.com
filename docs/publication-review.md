@@ -32,6 +32,16 @@ without the owner's direction.
   imposed by law and express agreements. This is not a determination that
   TechSonix is free of liability for every loss, including losses involving its
   own software or conduct.
+- Have counsel review the user-conduct indemnity for the intended markets. It
+  covers third-party claims caused by a user's material breach, unlawful conduct
+  or infringement, with proportional losses, documented reasonable costs,
+  prompt notice, participation and settlement consent. It excludes TechSonix's
+  own fault and users' exercise of their rights. This is a proposed contract
+  provision, not a finding that every user or claim is covered.
+- Verify that the release presents the terms, including the responsibility and
+  indemnity notice, before obtaining agreement and preserves the version agreed
+  to. Publishing the page alone does not verify the app's agreement flow. Do not
+  apply expanded obligations to earlier conduct retroactively.
 
 ## Publication sequence
 
@@ -61,10 +71,14 @@ those separate release gates in the EpixNet submission package.
 - [GitHub privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 - [Web3Forms privacy](https://web3forms.com/privacy): form delivery and processing.
 - [UK government guidance on statutory consumer rights](https://www.gov.uk/unfair-terms-in-sales-contracts/implied-rights): an example of limits on contractual exclusions. This is not a choice of UK law or a finding that it applies to TechSonix; assess each intended release market.
+- [California Civil Code section 1668](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1668.): an example of statutory restrictions on exempting a party from its own fraud, willful injury or violation of law. This is not a choice of California law.
+- [CMA guidance on writing fair consumer contracts](https://www.gov.uk/guidance/writing-a-fair-contract-for-customers): overly broad exclusions are not cured merely by saying they apply as far as law permits. Review substance and clarity for each intended market.
 
 Policies allocate responsibility without claiming blanket legal immunity. Scope
 and enforceability depend on facts and applicable law; publication alone is not
 an app-store approval or a legal determination.
+User terms also do not transfer TechSonix's developer obligations to Apple or
+Google onto end users; keep the existing platform and moderation release gates.
 
 ## Validation completed
 

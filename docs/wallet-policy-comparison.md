@@ -55,8 +55,16 @@ EpixNet's peer replication and publishing also need their existing disclosures.
 - Preserve EpixNet's community/reporting obligations and open-source rights.
   Wallet policies alone do not cover its browsing and peer-publishing features.
 
+The draft now includes an original indemnity for third-party claims caused by
+the user's material breach, unlawful conduct, fraud, intentional misuse or
+infringement. Keplr's indemnity and MetaMask section 8 provide examples of this
+contractual mechanism. EpixNet's version limits reimbursement to the user's
+contribution, excludes TechSonix's own fault, and defines reasonable costs,
+notice, participation and settlement consent. It does not charge users for
+asserting their own rights or simply using the app.
+
 The draft does not adopt a competitor's monetary cap, arbitration forum,
-indemnity, governing law, age restriction or regulatory-status declaration.
+governing law, age restriction or regulatory-status declaration.
 Those require decisions matched to TechSonix's services and release markets;
 the markedly different caps above are not a universal wallet standard.
 Review acceptance and versioned notice in the actual mobile release alongside

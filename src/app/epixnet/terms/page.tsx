@@ -12,10 +12,17 @@ const sections: PolicySection[] = [
     content: (
       <>
         <p>
-          These terms describe use of the TechSonix website and EpixNet services
+          These terms govern use of the TechSonix website and EpixNet services
           provided by TechSonix, Inc. Separate agreements for development work,
           app-store terms, and applicable open-source licenses continue to apply
           to their respective subjects.
+        </p>
+        <p>
+          Please read the <a href="#responsibility">user responsibilities</a>,{" "}
+          <a href="#wallet-losses">wallet-loss provisions</a>,{" "}
+          <a href="#indemnity">reimbursement obligations</a>, and{" "}
+          <a href="#liability">liability limitations</a>. They explain the risks
+          you accept and when your conduct can make you responsible for losses.
         </p>
         <p>
           TechSonix publishes EpixNet as software that lets people browse and
@@ -45,6 +52,13 @@ const sections: PolicySection[] = [
           permitted by applicable law and only if you are legally able to agree
           to the relevant terms, with a parent or guardian’s involvement where
           legally required.
+        </p>
+        <p>
+          You choose the destinations you visit, the people and services you
+          transact with, and the content you access or share. You are
+          responsible for your own decisions and for actions you authorize
+          another person or application to take on your behalf. Using EpixNet
+          does not transfer those responsibilities to TechSonix.
         </p>
         <p>
           Obtain the rights and permissions needed for content you access, copy,
@@ -206,6 +220,55 @@ const sections: PolicySection[] = [
     ),
   },
   {
+    id: "indemnity",
+    title: "Claims caused by your conduct (indemnity)",
+    content: (
+      <>
+        <p>
+          You agree to indemnify TechSonix, Inc., meaning reimburse it for
+          covered losses and reasonable legal expenses, for third-party claims
+          to the extent caused by:
+        </p>
+        <ul>
+          <li>Your material breach of these terms.</li>
+          <li>
+            Your unlawful conduct, fraud, or intentional misuse of EpixNet.
+          </li>
+          <li>
+            Your infringement of another person’s intellectual-property,
+            privacy, or other legal rights, including through content you
+            publish or distribute or services you operate.
+          </li>
+        </ul>
+        <p>
+          Covered losses are damages payable under a final judgment or a
+          settlement you approve in writing, together with reasonable,
+          documented legal expenses actually incurred in handling the covered
+          claim. The obligation is limited to the portion caused by your conduct
+          described above. It does not cover losses caused by TechSonix’s breach
+          of these terms, negligence, fraud, or other misconduct, or another
+          person’s independent wrongdoing.
+        </p>
+        <p>
+          TechSonix will promptly notify you of a claim for which it seeks
+          reimbursement, provide reasonable information about it, and give you a
+          reasonable opportunity to participate in its defense. We will take
+          reasonable steps to limit losses. Delayed notice reduces your
+          obligation to the extent it materially harms your ability to defend
+          the claim. Neither party may agree to a settlement imposing payment,
+          an admission, or another obligation on the other without that party’s
+          written consent, which must not be unreasonably withheld.
+        </p>
+        <p>
+          This section does not require you to reimburse TechSonix merely for
+          using EpixNet, bringing a complaint against us, or exercising your
+          legal rights. It applies only where permitted by applicable law and is
+          subject to the <a href="#liability">exceptions below</a>.
+        </p>
+      </>
+    ),
+  },
+  {
     id: "availability",
     title: "Availability and software licenses",
     content: (
@@ -246,10 +309,11 @@ const sections: PolicySection[] = [
           the application.
         </p>
         <p>
-          These limitations do not exclude or limit liability that cannot
-          lawfully be excluded or limited, including mandatory consumer rights
-          or responsibility for TechSonix’s own conduct where the law requires
-          it. Applicable law may give you remedies despite these terms.
+          Nothing in these terms excludes or limits liability for TechSonix’s
+          fraud or intentional misconduct, or any liability that cannot lawfully
+          be excluded or limited. Mandatory consumer rights remain available,
+          including any applicable rights concerning defective software or
+          services. Applicable law may give you remedies despite these terms.
         </p>
       </>
     ),
@@ -264,6 +328,13 @@ const sections: PolicySection[] = [
           revision date. Where required, we will provide notice or obtain
           agreement for material changes. You can stop using the services at any
           time; doing so does not remove previously published records.
+        </p>
+        <p>
+          Stopping use or deleting the application does not remove obligations
+          or claims arising from earlier conduct. The responsibility, indemnity,
+          and liability provisions continue to apply to that conduct, subject to
+          applicable law. Revised terms will not expand your obligations for
+          conduct that occurred before the revision took effect.
         </p>
         <p>
           Contact <a href="/epixnet/support/">TechSonix, Inc.</a> for questions,
