@@ -1,170 +1,170 @@
-'use client';
-
-import { useState } from 'react';
-import { FaCode, FaCubes, FaLayerGroup } from 'react-icons/fa';
-import Image from 'next/image';
-
+import NetworkArt from "../components/NetworkArt";
+import { services } from "../lib/site";
 export default function Home() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-
-        try {
-            const response = await fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    access_key: '816116b1-66d1-4b5b-a1b2-8a1954e5790c',
-                    ...formData,
-                }),
-            });
-
-            if (response.ok) {
-                setSubmitStatus('success');
-                setFormData({ name: '', email: '', message: '' });
-            } else {
-                setSubmitStatus('error');
-            }
-        } catch (error) {
-            setSubmitStatus('error');
-        }
-
-        setIsSubmitting(false);
-    };
-
-    return (
-        <main className="min-h-screen bg-gray-50">
-            {/* Hero Section */}
-            <header className="bg-gradient-to-r from-primary via-primary-dark to-secondary text-white">
-                <div className="container mx-auto px-6 py-12">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                        <div className="flex justify-center md:justify-start w-full md:w-auto">
-                            <div className="w-48 h-48 relative">
-                                <Image
-                                    src="/images/TechSonix.Icon.png"
-                                    alt="TechSonix Logo"
-                                    fill
-                                    priority
-                                    className="object-contain"
-                                />
-                            </div>
-                        </div>
-                        <div className="md:ml-8 md:flex-1 text-center md:text-left">
-                            <h1 className="text-5xl font-bold mb-4">TechSonix</h1>
-                            <p className="text-xl mb-8">Innovative Blockchain & Web Development Solutions</p>
-                            <a href="#contact" className="inline-block bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 hover:text-primary-dark transition-colors">
-                                Get in Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            {/* Services Section */}
-            <section className="py-20">
-                <div className="container mx-auto px-6">
-                    <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div className="p-6 bg-white rounded-lg shadow-lg">
-                            <FaCubes className="text-4xl text-primary mb-4" />
-                            <h3 className="text-xl font-semibold mb-2">Blockchain Development</h3>
-                            <p className="text-gray-600">
-                                Specialized in blockchain solutions, smart contracts, and Web3 integration for modern applications.
-                            </p>
-                        </div>
-                        <div className="p-6 bg-white rounded-lg shadow-lg">
-                            <FaCode className="text-4xl text-primary mb-4" />
-                            <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-                            <p className="text-gray-600">
-                                Custom web applications built with modern frameworks and best practices for optimal performance.
-                            </p>
-                        </div>
-                        <div className="p-6 bg-white rounded-lg shadow-lg">
-                            <FaLayerGroup className="text-4xl text-primary mb-4" />
-                            <h3 className="text-xl font-semibold mb-2">Full Stack & Integrations</h3>
-                            <p className="text-gray-600">
-                                End-to-end development solutions with seamless third-party integrations and API development.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Contact Section */}
-            <section id="contact" className="py-20 bg-gray-100">
-                <div className="container mx-auto px-6">
-                    <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
-                    <div className="max-w-lg mx-auto">
-                        <form onSubmit={handleSubmit} className="space-y-6">
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    required
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
-                                    value={formData.name}
-                                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    required
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
-                                    value={formData.email}
-                                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                                <textarea
-                                    id="message"
-                                    required
-                                    rows={4}
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
-                                    value={formData.message}
-                                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                />
-                            </div>
-                            <button
-                                type="submit"
-                                disabled={isSubmitting}
-                                className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors disabled:opacity-50"
-                            >
-                                {isSubmitting ? 'Sending...' : 'Send Message'}
-                            </button>
-                            {submitStatus === 'success' && (
-                                <p className="text-green-600">Message sent successfully!</p>
-                            )}
-                            {submitStatus === 'error' && (
-                                <p className="text-red-600">There was an error sending your message. Please try again.</p>
-                            )}
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            {/* Footer */}
-            <footer className="bg-secondary text-white py-8">
-                <div className="container mx-auto px-6">
-                    <div className="text-center">
-                        <p>© 2024 TechSonix, Inc. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
-        </main>
-    );
-} 
+  return (
+    <>
+      <section className="hero wrap">
+        <div className="hero-copy">
+          <p className="eyebrow">
+            <span className="small-line" /> Independent thinking. Connected
+            technology.
+          </p>
+          <h1>
+            Good software.
+            <br />
+            Greater <span className="serif">possibilities.</span>
+          </h1>
+          <p className="lede">
+            We build web experiences, blockchain applications, and the systems
+            that connect them. Thoughtfully engineered. Made to be used.
+          </p>
+          <div className="button-row">
+            <a className="button" href="/services/">
+              Explore what we do <span aria-hidden="true">↗</span>
+            </a>
+            <a className="text-link" href="/epixnet/">
+              Meet EpixNet <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <p className="hero-footnote">
+            TECHSONIX, INC. <span>SOFTWARE / SYSTEMS / OPEN NETWORKS</span>
+          </p>
+        </div>
+        <NetworkArt />
+      </section>
+      <div className="capability-strip">
+        <div className="wrap">
+          <span>From an idea to a working product.</span>
+          <span>Web development</span>
+          <span>Blockchain engineering</span>
+          <span>Systems integration</span>
+        </div>
+      </div>
+      <section className="section wrap">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">01 / What we do</p>
+            <h2>
+              Complex technology.
+              <br />
+              Clear experiences.
+            </h2>
+          </div>
+          <p>
+            Every product has different moving parts.
+            <br />
+            We help them work together.
+          </p>
+        </div>
+        <div className="service-grid">
+          {services.map((service) => (
+            <a
+              className="service-card"
+              key={service.slug}
+              href={`/services/${service.slug}/`}
+            >
+              <div className="card-top">
+                <span className="mono">/{service.number}</span>
+                <span className="circle-arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
+              <h3>{service.name}</h3>
+              <p>{service.description}</p>
+              <span className="card-link">
+                Learn more <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+      <section className="product-feature">
+        <div className="wrap feature-grid">
+          <div>
+            <p className="eyebrow">02 / Built by us</p>
+            <div className="product-wordmark">
+              EpixNet<span>↗</span>
+            </div>
+            <p className="feature-tagline">
+              A different way
+              <br />
+              to explore the web.
+            </p>
+          </div>
+          <div className="feature-copy">
+            <span className="pill">Browser · Peer network · Wallet</span>
+            <h2>
+              Explore an open,
+              <br />
+              connected network.
+            </h2>
+            <p>
+              EpixNet brings browsing, peer-hosted xites, and wallet connections
+              into one application. TechSonix is the app’s publisher;
+              independent communities create their own destinations.
+            </p>
+            <a className="button button-light" href="/epixnet/">
+              Get to know EpixNet <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              className="subtle-link"
+              href="https://github.com/EpixZone/EpixNet"
+            >
+              Explore the source on GitHub ↗
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="section wrap approach">
+        <div>
+          <p className="eyebrow">03 / How we think</p>
+          <h2>
+            Useful from the
+            <br />
+            first interaction.
+          </h2>
+          <a className="text-link" href="/about/">
+            More about TechSonix ↗
+          </a>
+        </div>
+        <div className="principle-list">
+          <div>
+            <span>01</span>
+            <div>
+              <h3>Start with the purpose.</h3>
+              <p>
+                Understand what people need before deciding how to build it.
+              </p>
+            </div>
+          </div>
+          <div>
+            <span>02</span>
+            <div>
+              <h3>Connect the whole system.</h3>
+              <p>
+                Consider the interface, the data, and the infrastructure
+                together.
+              </p>
+            </div>
+          </div>
+          <div>
+            <span>03</span>
+            <div>
+              <h3>Keep it understandable.</h3>
+              <p>Make behavior clear and give people useful choices.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="wrap cta">
+        <p className="eyebrow">Have something in mind?</p>
+        <div>
+          <h2>Let’s make it work.</h2>
+          <a className="button" href="/support/#contact">
+            Start a conversation <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </>
+  );
+}

@@ -1,19 +1,19 @@
 {
-    "name": "TechSonix",
-    "short_name": "TechSonix",
-    "icons": [
-        {
-            "src": "/images/TechSonix.Icon.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/TechSonix.Icon.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#F7931A",
-    "background_color": "#ffffff",
-    "display": "standalone"
+  "name": "TechSonix",
+  "short_name": "TechSonix",
+  "icons": [
+    {
+      "src": "/images/TechSonix.Icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/TechSonix.Icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f7f6f2",
+  "background_color": "#f7f6f2",
+  "display": "browser"
 }
