@@ -1,17 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export',
-    images: {
-        unoptimized: true,
-    },
-    basePath: '',
-    assetPrefix: '',
-    typescript: {
-        ignoreBuildErrors: false,
-    },
-    eslint: {
-        ignoreDuringBuilds: false,
-    }
-}
-
-module.exports = nextConfig 
+module.exports = {
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
+  poweredByHeader: false,
+};
