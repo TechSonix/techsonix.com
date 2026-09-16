@@ -1,6 +1,11 @@
 # Publication and app-submission handoff
 
 Prepared 2026-09-16 for TechSonix, Inc. The owner supplied the legal company name.
+The owner also confirmed that the integrated wallet is non-custodial. The app
+policies now state users' control of keys and transaction authorization and
+TechSonix's lack of custodial authority. This does not settle responsibility
+for the publisher's own software or conduct; the existing legal exceptions
+remain in the terms.
 Apple Developer company details have not been retrieved; no address, telephone,
 account-holder email, registration number, or team identifier has been copied
 or invented. Personal Apple account details must not become public contact data

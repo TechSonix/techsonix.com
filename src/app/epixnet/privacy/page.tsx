@@ -97,11 +97,13 @@ const sections: PolicySection[] = [
           for support, that excerpt becomes part of your support request.
         </p>
         <p>
-          The integrated wallet stores an encrypted software-wallet vault
-          locally. Hardware-wallet secrets remain subject to that device’s
+          The integrated wallet is non-custodial and stores an encrypted
+          software-wallet vault locally. TechSonix does not take custody of your
+          private keys or assets. You control your keys and authorize wallet
+          activity. Hardware-wallet secrets remain subject to that device’s
           design. TechSonix support cannot recover a lost recovery phrase or
-          reverse a blockchain transaction. Back up your recovery information
-          before removing wallet data or the application.
+          reverse a confirmed blockchain transaction. Back up your recovery
+          information before removing wallet data or the application.
         </p>
         <p>
           Deleting local data affects the copies on that device. It does not

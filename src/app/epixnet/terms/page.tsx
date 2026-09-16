@@ -69,10 +69,24 @@ const sections: PolicySection[] = [
     content: (
       <>
         <p>
-          EpixNet’s integrated software wallet is designed for self-custody. You
-          are responsible for protecting your device, passwords, private keys,
-          and recovery information, and for keeping usable backups. Losing or
-          disclosing that information can cause permanent loss of access to
+          EpixNet’s integrated wallet is non-custodial. TechSonix provides
+          wallet software; it does not take custody of your private keys or
+          assets, operate a custodial account for you, or authorize transactions
+          on your behalf. You control your keys and decide which connections,
+          permissions, and transactions to authorize.
+        </p>
+        <p>
+          As the wallet provider, TechSonix has no custodial authority to move
+          or freeze your assets, recover missing private keys or recovery
+          phrases, or reverse confirmed blockchain transactions. Independent
+          networks, token issuers, and services may have their own rules and
+          controls; a non-custodial wallet does not remove those third-party
+          risks.
+        </p>
+        <p>
+          You are responsible for protecting your device, passwords, private
+          keys, and recovery information, and for keeping usable backups. Losing
+          or disclosing that information can cause permanent loss of access to
           assets.
         </p>
         <p>
