@@ -81,6 +81,13 @@ they have not been included in unrelated repository commits or release artifacts
    user responsibilities while preserving mandatory rights; they do not establish
    that TechSonix can never be liable or remove publisher obligations to stores.
 
+## Dependency status
+
+GitHub reported 77 vulnerability alerts on the company repository’s existing
+default branch during this handoff. A fresh `npm audit` on this redesign branch
+reported zero known vulnerabilities. These are different revisions: the old
+default branch and deployed site have not been replaced by the tested draft.
+
 ## Validation for these changes
 
 - Wallet extension package TypeScript check passed.
