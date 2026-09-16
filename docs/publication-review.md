@@ -51,6 +51,10 @@ those separate release gates in the EpixNet submission package.
 
 ## References checked
 
+- [Wallet policy comparison](wallet-policy-comparison.md): Keplr, Phantom and
+  MetaMask terms and privacy notices reviewed on 16 September 2026. The draft
+  uses original language reflecting EpixNet's implementation and retains the
+  existing applicable-law exception to liability exclusions.
 - [Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/), sections 1.2, 1.5, 5.1.
 - [Google User Data](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en): public HTML privacy policy, publisher identification, contact mechanism, retention and deletion disclosures.
 - [Google UGC](https://support.google.com/googleplay/android-developer/answer/9876937?hl=en): applicable moderation duties remain with the app publisher.

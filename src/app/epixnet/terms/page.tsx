@@ -28,8 +28,7 @@ const sections: PolicySection[] = [
         <p>
           A listing, search result, link, or technical ability to connect does
           not represent an endorsement or authorization to use another person’s
-          content. These terms do not remove responsibilities that the law
-          places on TechSonix for its own services or conduct.
+          content.
         </p>
       </>
     ),
@@ -90,10 +89,10 @@ const sections: PolicySection[] = [
           assets.
         </p>
         <p>
-          Check the destination, network, asset, amount, fees, and requested
-          permissions before approving a wallet action. Protect and back up
-          recovery information. TechSonix support never needs your seed phrase,
-          private key, or wallet password.
+          Check the destination, network, asset, amount, any required memo or
+          destination tag, fees, and requested permissions before approving a
+          wallet action. TechSonix support never needs your seed phrase, private
+          key, or wallet password.
         </p>
         <p>
           Blockchain transactions can be irreversible. Network fees, asset
@@ -105,7 +104,18 @@ const sections: PolicySection[] = [
         </p>
         <p>
           Independent services may impose their own fees and terms. A software
-          connection does not mean TechSonix is a party to your transaction.
+          connection does not mean TechSonix is a party to your transaction. You
+          are responsible for the network and third-party fees associated with
+          transactions you authorize. Estimated fees can differ from final
+          charges, and a failed transaction may still incur a network fee.
+        </p>
+        <p>
+          Displayed balances, prices, fee estimates, and security information
+          may be delayed, incomplete, or inaccurate. Supporting an asset or
+          network does not certify its safety, legitimacy, or value. A security
+          check or the absence of a warning does not guarantee that a site,
+          asset, transaction, or approval is safe. Review wallet requests and
+          make your own decision before authorizing them.
         </p>
       </>
     ),
@@ -126,7 +136,8 @@ const sections: PolicySection[] = [
           </li>
           <li>
             Transfers to an incorrect address or network, incorrect amounts,
-            unsupported assets, or permissions and transactions you authorize.
+            missing or incorrect required memos or destination tags, unsupported
+            assets, or permissions and transactions you authorize.
           </li>
           <li>
             Phishing, impersonation, scams, malicious approvals, or a connected
@@ -149,11 +160,8 @@ const sections: PolicySection[] = [
           imposed by applicable law remains in effect.
         </p>
         <p>
-          These provisions do not exclude or limit responsibility for
-          TechSonix’s own conduct where that responsibility cannot lawfully be
-          excluded or limited. They are subject to the mandatory-rights
-          exceptions in the <a href="#liability">liability limitations</a>{" "}
-          below.
+          These provisions are subject to the mandatory-rights exceptions in the{" "}
+          <a href="#liability">liability limitations</a> below.
         </p>
       </>
     ),
